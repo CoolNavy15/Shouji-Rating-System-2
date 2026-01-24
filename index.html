@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shouji Rating System 2</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet"></head>
+<body>
+  <h1>Shouji Rating System 2</h1>
+  <div class="container">
+    <h2>An improved rating concept!!??</h2>
+    <div class="Player_A_Container">
+        <h2>Player A</h2>
+        <p>Rating µ</p>
+        <input id="A_mu" type="number" value="1500" placeholder="µ Rating">
+        <p>Deviation σ</p>
+        <input id="A_sigma" type="number" value="225" placeholder="σ Deviation">
+        <p>Volatility ς</p>
+        <input id="A_ksi" type="range" value="0" min="-1" max="1" step="0.01" placeholder="ς Volatility">
+    </div>
+    <div class="Player_B_Container">
+        <h2>Player B</h2>
+        <p>Rating µ</p>
+        <input id="B_mu" type="number" value="1500" placeholder="µ Rating">
+        <p>Deviation σ</p>
+        <input id="B_sigma" type="number" value="225" placeholder="σ Deviation">
+        <p>Volatility ς</p>
+        <input id="B_ksi" type="range" value="0" min="-1" max="1" step="0.01" placeholder="ς Volatility">
+    </div>
+    <div class="Control_Container">
+        <h2>Control Parameters</h2>
+        <p>Variation β</p>
+        <input id="beta" type="number" value="400" placeholder="β Variation">
+        <p>Momentum α</p>
+        <input id="alpha" type="range" value="0.5" step="0.01" min="0" max="1" placeholder="α Momentum">
+        <p>Memory φ</p>
+        <input id="phi" type="range" value="0.5" step="0.01" min="0" max="1" placeholder="φ Memory">
+    </div>
+    <h2>Match Result</h2>
+    <select id="result">
+      <option class="A_Text" value="A">A Wins</option>
+      <option class="D_Text" value="D">Draw</option>
+      <option class="B_Text" value="B">B Wins</option>
+    </select>
+    <button id="calcBtn">Calculate</button>
+    <pre id="output"></pre>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

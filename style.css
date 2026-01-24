@@ -1,0 +1,161 @@
+/* ================= ROOT ================= */
+:root {
+  --bg-color: #000064;
+  --bg-color2: #6464ff;
+  --container-bg: #6464ff;
+  --text-color: #ffffff;
+  --input-bg: #000064;
+  --button-bg: #6464ff;
+  --button-hover-bg: #000064;
+  --pre-bg: #000064;
+  --border: #ffffff;
+  --base-font: "Orbitron", Arial, sans-serif;
+  --title-font-weight: 900;
+  --button-font-weight: 600;
+  --h2-font-weight: 700;
+}
+
+/* ================= GLOBAL RESET ================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--base-font);
+  background: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+  text-shadow: 0 0 5px var(--text-color);
+}
+
+/* ================= CONTAINERS ================= */
+.container,
+.Control_Container {
+  max-width: 480px;
+  margin: 20px auto;
+  background: var(--container-bg);
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  box-shadow: 0 0 10px var(--border);
+  text-shadow: 0 0 5px var(--border);
+}
+
+.Player_A_Container {
+  max-width: 480px;
+  margin: 20px auto;
+  background: var(--bg-color);
+  padding: 20px;
+  border-radius: 12px;
+  color: cyan;
+  border: 2px solid cyan;
+  box-shadow: 0 0 10px cyan;
+  text-shadow: 0 0 5px cyan;
+}
+
+.Player_B_Container {
+  max-width: 480px;
+  margin: 20px auto;
+  background: var(--bg-color);
+  padding: 20px;
+  border-radius: 12px;
+  color: red;
+  border: 2px solid red;
+  box-shadow: 0 0 10px red;
+  text-shadow: 0 0 5px red;
+}
+
+/* ================= TEXT COLORS ================= */
+.A_Text {
+  color: cyan;
+  background-color: var(--bg-color2);
+}
+
+.B_Text {
+  color: red;
+  background-color: var(--bg-color2);
+}
+
+.D_Text {
+  color: white;
+  background-color: var(--bg-color2);
+}
+
+/* ================= HEADINGS ================= */
+h1 {
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: var(--title-font-weight);
+}
+
+h2 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: var(--h2-font-weight);
+}
+
+/* ================= INPUTS & SELECTS ================= */
+input[type="number"] {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  background: var(--input-bg);
+  color: var(--text-color);
+  border: 2px solid var(--border);
+  box-shadow: 0 0 5px var(--border);
+  font-family: var(--base-font);
+}
+
+select {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  background: var(--input-bg);
+  color: var(--text-color);
+  border: 2px solid var(--border);
+  box-shadow: 0 0 5px var(--border);
+  font-family: var(--base-font);
+}
+
+select {
+  cursor: pointer;
+}
+
+/* ================= BUTTON ================= */
+button {
+  margin-top: 15px;
+  padding: 12px;
+  width: 100%;
+  background: var(--button-bg);
+  border: 2px solid var(--text-color);
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: var(--button-font-weight);
+  cursor: pointer;
+  color: var(--text-color);
+  box-shadow: 0 0 8px var(--border);
+  font-family: var(--base-font);
+}
+
+button:hover {
+  background: var(--button-hover-bg);
+}
+
+/* ================= OUTPUT ================= */
+pre {
+  margin-top: 15px;
+  background: var(--pre-bg);
+  color: var(--text-color);
+  padding: 12px;
+  border-radius: 6px;
+  text-align: left;
+  font-size: 14px;
+  border: 2px solid var(--border);
+  box-shadow: 0 0 8px var(--border);
+  font-family: var(--base-font);
+}
