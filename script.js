@@ -94,31 +94,31 @@ function calculate() {
 `
 === Shouji 2 Calculation ===
   Player A
-    New Rating μ: ${Aμ} -> ${Aμ_new}  (Change: ${Aμ_new - Aμ})
-    New Deviation σ: ${Aσ} -> ${Aσ_new} ((Change: ${Aσ_new - Aσ})
-    Recorded Volatility ς: ${Aς*100}%
-    Perf Bonus: ${Af * Aς} (from Recorded Volatility)
+    New Rating μ: ${Aμ.toFixed(0)} -> ${Aμ_new.toFixed(0)}  (Change: ${(Aμ_new - Aμ).toFixed(0)})
+    New Deviation σ: ${Aσ.toFixed(0)} -> ${Aσ_new.toFixed(0)} ((Change: ${(Aσ_new - Aσ).toFixed(0)})
+    Recorded Volatility ς: ${(Aς*100).toFixed(0)}
+    Perf Bonus: ${(Af * Aς).toFixed(0)} (from Recorded Volatility)
 
   Player B
-    New Rating μ: ${Bμ} -> ${Bμ_new}  (Change: ${Bμ_new - Bμ})
-    New Deviation σ: ${Bσ} -> ${Bσ_new} ((Change: ${Bσ_new - Bσ})
-    Recorded Volatility ς: ${Bς*100}%
-    Perf Bonus: ${Bf * Bς} (from Recorded Volatility)
+    New Rating μ: ${Bμ.toFixed(0)} -> ${Bμ_new.toFixed(0)}  (Change: ${(Bμ_new - Bμ).toFixed(0)})
+    New Deviation σ: ${Bσ.toFixed(0)} -> ${Bσ_new.toFixed(0)} ((Change: ${(Bσ_new - Bσ).toFixed(0)})
+    Recorded Volatility ς: ${(Bς*100).toFixed(0)}
+    Perf Bonus: ${(Bf * Bς).toFixed(0)} (from Recorded Volatility)
 
   Probabilities
-    A Win: ${Ap * 100}%
-    B Win: ${Bp * 100}%
+    A Win: ${(Ap * 100).toFixed(0)}%
+    B Win: ${(Bp * 100).toFixed(0)}%
 
   Parameters
-    Alpha α: ${α*100}%
-    Phi φ: ${φ*100}%
+    Alpha α: ${α}
+    Phi φ: ${φ}
     
   Calculated Parameters
-    Confidence ρ: ${ρ}
+    Confidence ρ: ${ρ.toFixed(0)}
 
   Other Calculations
-    Effective β: ${effective_beta}
-    T-Distribution Scale: ${t_scale}
+    Effective β: ${effective_beta.toFixed(2)}
+    T-Distribution Scale: ${t_scale.toFixed(2)}
 `;
 }
 // --- Standard Normal CDF Helper ---
