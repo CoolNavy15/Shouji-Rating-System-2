@@ -295,7 +295,7 @@ function calculate() {
   // Match Weight (g): The actual update weight (scales with OPPONENT trust)
   // This prevents farming unstable players.
   const Ag = Af * Av;
-  const Bg = Af * Bv;
+  const Bg = Bf * Bv;
 
   // --- 6. Calculate Adaptive Probability (The Rho Fix) ---
   
